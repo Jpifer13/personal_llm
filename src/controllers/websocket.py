@@ -18,5 +18,5 @@ async def websocket_endpoint(websocket: WebSocket):
     generated_text = await generate_text(prompt)
     for char in generated_text:
         await websocket.send_text(char)
-        await asyncio.sleep(0.05)  # Simulate typing delay
+        await asyncio.sleep(0.01)  # Simulate typing delay
     await websocket.close()

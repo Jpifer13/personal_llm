@@ -60,7 +60,6 @@ class Application:
         import src.controllers as controllers
 
         routers = [
-            controllers.home.router,
             controllers.websocket.router,
         ]
 

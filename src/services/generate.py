@@ -10,7 +10,7 @@ tokenizer.pad_token = tokenizer.eos_token
 
 
 async def generate_text(
-    prompt: str, max_length: int = 50
+    prompt: str, max_length: int = 1000
 ):
     inputs = tokenizer(
         prompt,
@@ -29,5 +29,8 @@ async def generate_text(
         early_stopping=True,
         pad_token_id=tokenizer.eos_token_id,
     )
-    generated_texts = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    generated_texts = ""
+    for output in outputs:
+        generated_texts += tokenizer.decode(output, skip_special_tokens=True)
+
     return generated_texts
