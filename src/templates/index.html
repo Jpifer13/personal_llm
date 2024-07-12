@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Generation with GPT-2</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Generation with GPT-2</h1>
+        <form id="generate-form">
+            <label for="prompt">Enter a prompt:</label>
+            <textarea id="prompt" name="prompt" rows="4" required></textarea>
+            <button type="submit">Generate Text</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script>
+        document.getElementById("generate-form").onsubmit = async function(event) {
+            event.preventDefault();
+            const prompt = document.getElementById("prompt").value;
+            const ws = new WebSocket(`ws://${location.host}/ws`);
+            
+            const resultContainer = document.getElementById("results");
+            const resultBox = document.createElement("div");
+            resultBox.className = "result";
+            const resultTitle = document.createElement("h2");
+            resultTitle.innerText = "Generated Text:";
+            const resultTextArea = document.createElement("textarea");
+            resultTextArea.rows = 10;
+            resultTextArea.readOnly = true;
+            resultBox.appendChild(resultTitle);
+            resultBox.appendChild(resultTextArea);
+            resultContainer.appendChild(resultBox);
+            
+            ws.onopen = () => {
+                ws.send(prompt);
+            };
+            
+            ws.onmessage = (event) => {
+                resultTextArea.value += event.data;
+            };
+            
+            ws.onclose = () => {
+                console.log("Connection closed");
+            };
+        };
+    </script>
+</body>
+</html>
