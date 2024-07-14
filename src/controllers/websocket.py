@@ -11,7 +11,7 @@ router = APIRouter()
 logger = getLogger()
 
 
-@router.websocket("/ws")
+@router.websocket("/ws/run")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     prompt = await websocket.receive_text()

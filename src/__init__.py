@@ -60,6 +60,8 @@ class Application:
         import src.controllers as controllers
 
         routers = [
+            controllers.fine_tune.router,
+            controllers.health.router,
             controllers.websocket.router,
         ]
 

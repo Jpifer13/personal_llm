@@ -1,71 +1,28 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home';
+import FineTune from './components/FineTune';
+import RunModel from './components/RunModel';
 
 function App() {
-  const [prompt, setPrompt] = useState('');
-  const [responses, setResponses] = useState([]);
-  const [typingResponse, setTypingResponse] = useState('');
-
-  const responseContainerRef = useRef(null);
-
-  useEffect(() => {
-    if (responseContainerRef.current) {
-      responseContainerRef.current.scrollTop = responseContainerRef.current.scrollHeight;
-    }
-  }, [typingResponse, responses]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const ws = new WebSocket(`ws://${window.location.hostname}:8000/ws`);
-
-    let currentResponse = '';
-    ws.onopen = () => {
-      ws.send(prompt);
-    };
-
-    ws.onmessage = (event) => {
-      currentResponse += event.data;
-      setTypingResponse(currentResponse);
-    };
-
-    ws.onclose = () => {
-      setResponses((prevResponses) => [
-        ...prevResponses,
-        currentResponse,
-      ]);
-      setTypingResponse('');
-    };
-  };
-
   return (
-    <div className="container">
-      <h1>Text Generation with GPT-2</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="prompt">Enter a prompt:</label>
-        <textarea
-          id="prompt"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-          rows="4"
-          required
-        />
-        <button type="submit">Generate Text</button>
-      </form>
-      <div id="results" ref={responseContainerRef}>
-        {responses.map((response, index) => (
-          <div key={index} className="result">
-            <h2>Generated Text {index + 1}:</h2>
-            <textarea value={response} rows="10" readOnly />
-          </div>
-        ))}
-        {typingResponse && (
-          <div className="result">
-            <h2>Typing...</h2>
-            <textarea value={typingResponse} rows="10" readOnly />
-          </div>
-        )}
+    <Router>
+      <div className="container">
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/finetune">Fine-Tune Model</Link></li>
+            <li><Link to="/run">Run Model</Link></li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/finetune" component={FineTune} />
+          <Route path="/run" component={RunModel} />
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
