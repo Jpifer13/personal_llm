@@ -2,8 +2,9 @@ import json
 import os
 from datetime import datetime
 from logging import getLogger
+from typing import Optional
 
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Request
+from fastapi import APIRouter, File, UploadFile, WebSocket, WebSocketDisconnect, Request
 
 from src.services.fine_tune import fine_tune
 
@@ -32,6 +33,23 @@ async def websocket_upload(websocket: WebSocket):
         await websocket.send_text(f"Error: {str(e)}")
     finally:
         await websocket.close()
+
+
+@router.post("/upload")
+async def upload_file(file: UploadFile = File(...), dataset_name: Optional[str] = None):
+    filename: str = dataset_name or file.filename.replace(" ", "_")
+
+    # Check if file already exists
+    pdf_file_path: str = f"{os.getcwd()}/pdfs/{filename}"
+    if os.path.exists(pdf_file_path):
+        return {"status_code": 404, "message": f"PDF already exists: {filename}"}
+
+    with open(pdf_file_path, "wb") as f:
+        f.write(await file.read())
+
+    await fine_tune(pdf_file_path)
+
+    return {"message": f"PDF uploaded successfully: {filename}"}
 
 
 @router.get("/result/{dataset_name}")
