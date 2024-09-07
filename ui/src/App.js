@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import FineTune from './components/FineTune';
@@ -16,11 +16,11 @@ function App() {
             <li><Link to="/run">Run Model</Link></li>
           </ul>
         </nav>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/finetune" component={FineTune} />
-          <Route path="/run" component={RunModel} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/finetune" element={<FineTune />} />
+          <Route path="/run" element={<RunModel />} />
+        </Routes>
       </div>
     </Router>
   );

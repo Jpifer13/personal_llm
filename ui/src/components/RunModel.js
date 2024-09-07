@@ -15,7 +15,7 @@ function RunModel() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const ws = new WebSocket(`ws://${window.location.hostname}:8000/ws/run`);
+    const ws = new WebSocket(`ws://127.0.0.1:8000/ws/run`);
 
     let currentResponse = '';
     ws.onopen = () => {

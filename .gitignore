@@ -155,6 +155,6 @@ docs/
 
 .env.ps1
 
-results*
-datasets*
-fine_tuned_models*
+results/*
+datasets/*
+fine_tuned_models/*

@@ -20,7 +20,6 @@ class Application:
         self._app = FastAPI(
             title="LLM",
             openapi_url="/openapi.json",
-            root_path="/dev",
             version="0.0.1",
         )
 

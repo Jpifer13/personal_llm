@@ -1,0 +1,275 @@
+[
+    {
+        "prompt": "\n<prompt>\n\n<context>\nAs a business consultant, your task is to analyze the efficiency of a Small or Medium Size Business (SMB) using lean manufacturing methodology, specifically focusing on one-piece flow. One-piece flow, also known as continuous flow, refers to the way products move from one step in the process to the next, based on the product's needs rather than the organization or equipment. In a business context, this translates to the workflow required to deliver value (the \"product\" or the \"service\") to a customer, which we will refer to as a \"performance unit.\" A performance unit represents what is ultimately delivered to the customer, such as a website, a course of therapy, a fund option for investment, an architectural design, or service provided. The goal of one-piece flow is to reduce waste, particularly waiting, processing, and overproduction in the delivery of the performance unit. The performance unit should represent the ultimate product or service delivered to the customer, not intermediate steps or components. When deriving the performance unit, consider what an average performance unit would embody for the specific company attributes and value proposition provided in the <step1> tag below.\n</context>\n\n<steps>\nTo understand the one-piece flow of a business's value stream, follow these steps:\n\n<step1>\n1. Familiarize yourself with the SMB owner and company details provided by the user, including:\n    <company-details>]\n    Job Title: CEO,\n    Name: John Doe,\n    Company Name: BrightBloom,\n    Geographical Footprint: DE, MD, NJ,\n    Industry: Healthcare & Social Assistance,\n    Company Size: 50,\n    Annual Revenue: 5,400,000.00,\n    Company Details: BrightBloom Centers is a leading provider of Applied Behavioral Analysis (ABA) therapy for children with autism and other special needs. Founded in 2014, our locations in Delaware, Maryland, and New Jersey are staffed by Board Certified Behavior Analysts (BCBAs), Registered Behavior Technicians (RBT), and trained paraprofessionals. Our centers hold the Behavioral Health Center of Excellence (BHCOE\u00ae) accreditation, which recognizes behavioral health excellence in the areas of clinical quality, staff qualifications, and consumer satisfaction. We are also a member of The Council of Autism Service Providers (CASP), an independent, nonprofit association dedicated to advancing evidence-based care and best practices in services to individuals with autism spectrum disorders. Intake is a huge emphasis for us. Episode of care ensues after intake. We ultimately want a quick time-to-treatment. We discuss things like desired schedule, insurance benefits review, service assessment and initial plan review. Daily, the RBTs are tracking learning opportunities per minute since students learn by repetition. We collect data by following the child and through play to create opportunities to learn. This usually includes prompting, guiding, and working through treatment goals. Our whole thing is child led, not child run. Our priority is direct contact - a daily session note is created everyday. The RBT creates the note, the BCBA supervises this,\n    What makes your company the best: string,\n    tell us about a time you made a customer happy: We aim for significant modification in behavior to ensue by the 2-3 year mark,\n    anything else to mention, what keeps you up at night:Learning opportunities are collected everyday - we hope to achieve 300 data points per patient per day as this is the industry standard; however, we have no idea if we are hitting the data marks. Additionally, RBT to BCBA ratio is a huge metric for us. Right now, we're averaging around 7 RBTs (1 BCBA) per family, when it should really be around 2.\n    </company-details>\n\nIf the provided information seems incomplete, make reasonable assumptions based on industry standards and best practices for similar businesses. Clearly mark these assumptions in your analysis.\n</step1>\n\n<step2>\n2. Based on the company details, identify the single value stream required to deliver the performance unit to the customer. If the company offers multiple, distinct, or unique performance units, generate separate value streams for each performance unit. Summarize the value stream using action verbs (e.g., Assess, Plan, Deliver, Monitor, Train) - these verbs should directly summarize the major conversion events in the flow (i.e., moving from one activity to the next). The verbs should be action verbs and should not include a gerund.\n</step2>\n\n<step3>\n3. Create a \"Master Data Table\" that details the one-piece flow of each value stream. Include all measurable and controllable activities required to fulfill an average performance unit for the specified company (use the details provided and what you know about the particular company type or industry). Activities are the individual units that make up one performance unit. Activities should not be able to be broken down into smaller units - that activities identified should be the smallest activity units, including direct value-driving and indirect, value-supporting activities. Order activities linearly based on the logical flow. The activity name should be intuitive as to what it controls in the process - for example, include a prefix like \"number of X [activities]\". Ensure you cover all aspects of the business, including but not limited to: customer acquisition, product/service delivery, operations, finance, human resources, technology, compliance, and stakeholder management. Consider both core and support activities. Consider industry-specific regulations, practices, and challenges that might influence the value stream and add relevant activities to address these factors.\n\nReview your list of activities and check for any gaps in the value stream. Ensure that each major business function (e.g., marketing, operations, finance, HR) is represented. If you identify any gaps, add relevant activities to ensure a comprehensive view of the business.\n</step3>\n\n<step4>\n4. For each activity, determine the delivery parameter based on the specific company details provided. This represents the actual cadence by which value is delivered to a customer throughout the delivery lifecycle of a single performance unit. Use your best judgment to interpret the company's operational model and constraints. Consider the following guidelines, but always prioritize the information given about the specific business:\n\na) Standard frequencies:\n   - Daily (5 days/week): Typically 260 (52 weeks * 5 days)\n   - Daily (6 days/week): Typically 312 (52 weeks * 6 days)\n   - Daily (7 days/week): 365\n   - Weekly: 52\n   - Bi-weekly or Fortnightly: 26\n   - Bi-monthly: 24\n   - Monthly: 12\n   - Quarterly: 4\n   - Bi-yearly: 2\n   - Yearly: 1\n   - Once: 1 (for activities occurring only once per performance unit)\n\nb) Variable frequencies (calculate based on company-specific information):\n   - Seasonal: Determine the number of occurrences based on the company's seasonal patterns.\n   - Academic year: Adjust parameters according to the specific academic calendar mentioned.\n   - Per project milestone: Calculate based on the typical number of milestones in the company's projects.\n   - Per sprint: Determine based on the company's sprint duration and frequency.\n   - On-demand or as-needed: Estimate using any provided historical data or expected frequency for the specific business.\n   - Any other custom frequency: Calculate based on the company's unique operational model.\n\nFor activities with frequencies not listed above, calculate the appropriate number based on the business model and typical delivery schedule described in the company details.\n\nAdditionally, for each delivery parameter, provide the estimated, ideal number of cycles required for the delivery of a single performance unit. This should also be based on the specific company information provided.\n\nEnsure that the delivery parameter and cycle are consistent with the expected duration of the performance unit and the specific business model described. Always use your best judgment to interpret the company details and apply the most appropriate delivery parameters.\n</step4>\n\n<step5>\n5. Estimate the ideal hours per unit and ideal benchmark units for each activity - be sure to consider the delivery parameter, cadence, and cycles when making estimations. Benchmark units represent the expected performance of an optimized, efficient, and stable company. All estimates should be per performance unit. For example, if the performance unit is a new website and a process activity is \"design review meetings\", the ideal estimations would be 1 meeting (benchmark unit) lasting 1 hour (estimated hours per unit) per week (delivery parameter) for 4 weeks (cycle).\n</step5>\n\n<step6>\n6. Identify if each activity is a direct value driver or an indirect value-supporting activity, and list the key skills and capabilities required to fulfill it.\n\nUse the following guidelines for tagging:\n\n- Direct value drivers: Activities that directly contribute to creating or delivering the performance unit to the customer. These are typically billable activities.\n- Indirect value-supporting: Activities that support the core business operations but don't directly create or deliver the performance unit. These typically include functions like sales, marketing, human resources, IT support, finance, and administration. These are usually not billable to the customer.\n\nEnsure consistent tagging by always classifying supporting business functions (e.g., sales, marketing, HR, IT support, finance, administration) as indirect value-supporting activities.\n</step6>\n\n<step7>\n7. Add columns to the Master Data Table for the functional requirement needed to fulfill each activity, job type tag (Full Time Employee, Contractor, or Digital Tool), hourly rate, and revenue multiplier. Use the skills and capabilities column to determine the appropriate functional role, beyond what industry best practices may suggest. The idea is to determine the role required to fulfill the activity based on the skills and capabilities required to fulfill the activity. Additionally, the rates and multipliers should be representative of the company's value proposition and unique selling proposition.\n</step7>\n\n<step8>\n8. Add a column to the Master Data Table to tag critical activities that are leading indicators of value stream performance. There should be one critical activity tagged per value stream step. The tag should be \"yes\" to indicate a critical activity, and \"no\" to indicate an activity is not critical. Additionally, include another column to provide context for each activity, explaining what one unit represents and how it should be measured (to ensure consistency as new measurements are collected - ensuring activities are measured the same way each time).\n</step8>\n\n<step9>\n9. Add columns for benchmark KPIs based on company-provided information and your research. Include a context column explaining the meaning of each KPI.\n</step9>\n\n<step10>\n10. Sort the Master Data Table by value stream order and tag.\n</step10>\n\n<step11>\n11. Based on the company information provided in <step1>, summarize and concisely articulate the 3-5 pillars of the company's value proposition. Additionally, generate a one-word theme of the value proposition - this should represent the \"ideal\" delivery of a performance unit. Based on the theme identified, generate 3 other themes that represent variants of the performance unit, either representing a drop in performance or an uptick in innovation. Explain how the themes were generated in terms of benchmark units, hours per unit, and cycles - commentary should be based on the ideal state benchmarks. Add this additional information to the \"Summary Table\".\n\n<step12>\n12. Generate a \"Summary Table\" that captures the value stream summary, the performance unit and any additional contextual information on your analysis and reasoning behind the identified value streams and controls. Additionally, add information on how you arrived at the estimations for critical activities and value stream activities. Finally, include the value stream pillars, thematic one-word summary, and alternative theme-based performance unit models. You should add these as Context Item, Context Details, and a 3-5 word Context Summary to the \"Summary Table\".\n</step12>\n</steps>\n\n<step13>\n13. Calculate the Cost of Goods Sold (COGS) per performance unit:\na) Review the company data provided and any relevant industry research.\nb) Identify direct costs associated with producing one performance unit, excluding labor costs already accounted for in the Master Data Table. This may include:\n- Raw materials\n- Direct supplies\n- Third-party services directly tied to production\n- Any other non-labor costs directly associated with creating the performance unit\nc) Sum these costs to determine the COGS per performance unit.\nd) Add a new entry to the Summary Table with the Context Item \"COGS per Performance Unit\", the calculated value in Context Details, and a brief explanation in Context Summary.\n</step13>\n\n<step14>\n14. Establish the operating profit margin framework:\na) Review the annual revenue provided in the company details section.\nb) Using the annual revenue, identify the appropriate leadership overhead percentage. Use the following thresholds as directional guidelines, but apply best judgment based on the company's specific circumstances and industry factors:\n- Up to 1M revenue: 8-10%\n- Up to 2.5M revenue: 8-10%\n- Up to 5M revenue: 8-10%\n- Up to 10M revenue: 5%\n- Up to 25M revenue: 4%\nc) Analyze the business model and industry to estimate the other overhead expenses, typically ranging from 3-7% of revenue. Consider factors such as:\n- Physical space requirements (e.g., office, warehouse)\n- Technology infrastructure needs\n- Administrative support requirements\n- Regulatory compliance costs\nApply best judgment based on the company's specific circumstances and industry factors when determining this percentage.\nd) Sum the leadership overhead and other overhead percentages to get the total operating profit margin.\ne) Add new entries to the Summary Table:\n- Context Item: \"Leadership Overhead\", Context Details: [Calculated Percentage], Context Summary: \"Estimated percentage of revenue for leadership costs\"\n- Context Item: \"Other Overhead\", Context Details: [Calculated Percentage], Context Summary: \"Estimated percentage of revenue for other operational costs\"\n- Context Item: \"Total Operating Profit Margin\", Context Details: [Calculated Total Percentage], Context Summary: \"Estimated total percentage of revenue for operational costs\"\nf) In the Context Summary for each entry, briefly explain the rationale for the chosen percentages based on the company's specific circumstances and industry factors.\n</step14>\n\n\n<desired-outputs>\nDesired Outputs:\nImportant Note: No additional context or explanations should be provided beyond the specified tables.\n1. Master Data Table: Columns include Value Stream Activity, Value Stream Tag, Delivery Parameter, Cadence, Cycle, Hours/Unit, Benchmark Units, Benchmark KPIs, KPI Context, Value Tag, Skills Required, Functional Requirement, Job Type Tag, Hourly Rate, Revenue Multiplier, Critical Activity Tag, Activity Context\n2. Summary Table: Value stream summary, performance unit, contextual information on the analysis and reasoning, value proposition pillars, one-word value proposition thematic summary, additional thematic performance units, COGS, Leadership Overhead, Other Overhead, Total Operating Profit Margin. The format of the table should be context item, context details, and a 3-5 summary of the information.\n</desired-outputs>\n\n<analysis-guidelines>\nThroughout the analysis, ensure that:\n- Strive for comprehensiveness in identifying activities. Ensure that all major business functions and processes are represented in the value stream.\n- Adhere to the final output format and do not include any extra information\n- All estimations and examples are framed per performance unit, not per customer\n- Activities are ordered logically based on the one-piece flow\n- Ensure that only one value stream is identified for each performance unit, encompassing all the activities required to deliver the final product or service to the customer.\n- Delivery parameter, cadence, and cycle align with each other\n- Hour and unit estimates are reasonable and granular\n- Critical activities are leading indicators of value stream performance\n- Context is provided for estimations, critical activities, and KPIs\n- Ensure consistent activity tagging by always classifying supporting business functions (e.g., sales, marketing, HR, IT support, finance, administration) as indirect value-supporting activities.\n</analysis-guidelines>\n\n<final-output>\nThe output should ONLY consist of three keys: summary_table, columns, and master_data_table. No additional context, explanations, or text should be provided beyond these two tables. Provide the output in JSON format following the following output example: {'summary_table': [{'context_item': 'Value Stream Summary', 'context_details': 'Assess, Plan, Deliver, Monitor, Adjust', 'context_summary': 'ABA therapy delivery process'}, {'context_item': 'Performance Unit', 'context_details': 'One complete course of ABA therapy for a child with autism', 'context_summary': 'Full ABA therapy course'}, {'context_item': 'Value Proposition Pillars', 'context_details': '1. Rapid intake and time-to-treatment, 2. Child-led, evidence-based therapy, 3. Continuous data collection and analysis, 4. Regular reassessment and program adjustment', 'context_summary': 'Efficient, personalized ABA therapy'}, {'context_item': 'Value Proposition Theme', 'context_details': 'Transformation', 'context_summary': 'Optimal behavioral change achieved'}, {'context_item': 'Alternative Theme 1', 'context_details': 'Progress', 'context_summary': 'Moderate improvement, longer duration'}, {'context_item': 'Alternative Theme 2', 'context_details': 'Acceleration', 'context_summary': 'Rapid improvement, intense therapy'}, {'context_item': 'Alternative Theme 3', 'context_details': 'Maintenance', 'context_summary': 'Slow improvement, extended support'}, {'context_item': 'COGS per Performance Unit', 'context_details': '$500', 'context_summary': 'Direct non-labor costs'}, {'context_item': 'Leadership Overhead', 'context_details': '8%', 'context_summary': 'Estimated leadership costs'}, {'context_item': 'Other Overhead', 'context_details': '5%', 'context_summary': 'Estimated operational costs'}, {'context_item': 'Total Operating Profit Margin', 'context_details': '13%', 'context_summary': 'Total estimated operational costs'}], 'columns': ['Value Stream Activity', 'Value Stream Tag', 'Delivery Parameter', 'Cadence', 'Cycle', 'Hours/Unit', 'Benchmark Units', 'Benchmark KPIs', 'KPI Context', 'Value Tag', 'Skills Required', 'Functional Requirement', 'Job Type Tag', 'Hourly Rate', 'Revenue Multiplier', 'Critical Activity Tag', 'Activity Context'], 'master_data_table': [{'value_stream_activity': 'Number of initial consultations', 'value_stream_tag': 'Assess', 'delivery_parameter': 'Once', 'cadence': 1, 'cycle': 1, 'hours_per_unit': 2, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of consultations completed', 'value_tag': 'Indirect', 'skills_required': 'Communication, assessment', 'functional_requirement': 'Intake Specialist', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 25, 'revenue_multiplier': 2.5, 'critical_activity_tag': 'Yes', 'activity_context': \"Initial meeting to assess child's needs\"}, {'value_stream_activity': 'Number of insurance verifications', 'value_stream_tag': 'Assess', 'delivery_parameter': 'Once', 'cadence': 1, 'cycle': 1, 'hours_per_unit': 1, 'benchmark_units': 1, 'benchmark_kpis': '100% verification rate', 'kpi_context': 'Percentage of insurance verifications completed', 'value_tag': 'Indirect', 'skills_required': 'Insurance knowledge, attention to detail', 'functional_requirement': 'Insurance Specialist', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 22, 'revenue_multiplier': 2.5, 'critical_activity_tag': 'No', 'activity_context': 'Verifying insurance coverage for therapy'}, {'value_stream_activity': 'Number of initial assessments', 'value_stream_tag': 'Assess', 'delivery_parameter': 'Once', 'cadence': 1, 'cycle': 1, 'hours_per_unit': 4, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of initial assessments completed', 'value_tag': 'Direct', 'skills_required': 'ABA expertise, assessment skills', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'Yes', 'activity_context': \"Comprehensive assessment of child's needs\"}, {'value_stream_activity': 'Number of treatment plans created', 'value_stream_tag': 'Plan', 'delivery_parameter': 'Once', 'cadence': 1, 'cycle': 1, 'hours_per_unit': 3, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of treatment plans created', 'value_tag': 'Direct', 'skills_required': 'ABA expertise, planning skills', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'Yes', 'activity_context': 'Creating personalized ABA treatment plan'}, {'value_stream_activity': 'Number of therapy sessions', 'value_stream_tag': 'Deliver', 'delivery_parameter': 'Daily (5 days/week)', 'cadence': 260, 'cycle': 520, 'hours_per_unit': 2, 'benchmark_units': 1, 'benchmark_kpis': '300 learning opportunities per session', 'kpi_context': 'Number of data points collected per session', 'value_tag': 'Direct', 'skills_required': 'ABA techniques, patience, adaptability', 'functional_requirement': 'RBT', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 20, 'revenue_multiplier': 2.5, 'critical_activity_tag': 'Yes', 'activity_context': 'Delivering daily ABA therapy sessions'}, {'value_stream_activity': 'Number of session notes created', 'value_stream_tag': 'Monitor', 'delivery_parameter': 'Daily (5 days/week)', 'cadence': 260, 'cycle': 520, 'hours_per_unit': 0.5, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of session notes completed', 'value_tag': 'Indirect', 'skills_required': 'Documentation, attention to detail', 'functional_requirement': 'RBT', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 20, 'revenue_multiplier': 2.5, 'critical_activity_tag': 'No', 'activity_context': 'Documenting daily therapy sessions'}, {'value_stream_activity': 'Number of BCBA supervision sessions', 'value_stream_tag': 'Monitor', 'delivery_parameter': 'Weekly', 'cadence': 52, 'cycle': 104, 'hours_per_unit': 1, 'benchmark_units': 1, 'benchmark_kpis': '2 RBTs per BCBA', 'kpi_context': 'Ideal RBT to BCBA ratio', 'value_tag': 'Direct', 'skills_required': 'ABA expertise, supervision skills', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'Yes', 'activity_context': 'BCBA supervision of RBTs'}, {'value_stream_activity': 'Number of progress reviews', 'value_stream_tag': 'Monitor', 'delivery_parameter': 'Monthly', 'cadence': 12, 'cycle': 24, 'hours_per_unit': 2, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of progress reviews completed', 'value_tag': 'Direct', 'skills_required': 'Data analysis, ABA expertise', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'No', 'activity_context': \"Monthly review of child's progress\"}, {'value_stream_activity': 'Number of caregiver communication sessions', 'value_stream_tag': 'Monitor', 'delivery_parameter': 'Monthly', 'cadence': 12, 'cycle': 24, 'hours_per_unit': 1, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of caregiver sessions completed', 'value_tag': 'Indirect', 'skills_required': 'Communication, empathy', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'No', 'activity_context': 'Regular communication with caregivers'}, {'value_stream_activity': 'Number of formal plan updates', 'value_stream_tag': 'Adjust', 'delivery_parameter': 'Quarterly', 'cadence': 4, 'cycle': 8, 'hours_per_unit': 3, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of plan updates completed', 'value_tag': 'Direct', 'skills_required': 'ABA expertise, planning skills', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'Yes', 'activity_context': 'Quarterly update of treatment plan'}, {'value_stream_activity': 'Number of reassessments', 'value_stream_tag': 'Adjust', 'delivery_parameter': 'Bi-yearly', 'cadence': 2, 'cycle': 4, 'hours_per_unit': 4, 'benchmark_units': 1, 'benchmark_kpis': '100% completion rate', 'kpi_context': 'Percentage of reassessments completed', 'value_tag': 'Direct', 'skills_required': 'ABA expertise, assessment skills', 'functional_requirement': 'BCBA', 'job_type_tag': 'Full Time Employee', 'hourly_rate': 50, 'revenue_multiplier': 3, 'critical_activity_tag': 'No', 'activity_context': \"Comprehensive reassessment of child's needs\"}]}\n</final-output>\n</prompt>\n",
+        "completion": {
+            "summary_table": [
+                {
+                    "context_item": "Value Stream Summary",
+                    "context_details": "Intake, Assess, Plan, Treat, Monitor, Reassess, Adjust",
+                    "context_summary": "Key steps in ABA therapy process"
+                },
+                {
+                    "context_item": "Performance Unit",
+                    "context_details": "One complete course of ABA therapy treatment for a child, from initial intake through significant behavioral modification, typically achieved in 2-3 years",
+                    "context_summary": "Full ABA treatment course"
+                },
+                {
+                    "context_item": "Value Proposition Pillars",
+                    "context_details": "1. Rapid intake and time-to-treatment, 2. Child-led, evidence-based therapy, 3. High volume data collection, 4. Low RBT to BCBA ratios, 5. Regular assessment and adjustment",
+                    "context_summary": "Efficient personalized ABA care"
+                },
+                {
+                    "context_item": "Value Proposition Theme",
+                    "context_details": "Transformation",
+                    "context_summary": "Significant behavioral change"
+                },
+                {
+                    "context_item": "Alternative Theme 1",
+                    "context_details": "Progress",
+                    "context_summary": "Steady gains, longer duration"
+                },
+                {
+                    "context_item": "Alternative Theme 2",
+                    "context_details": "Breakthrough",
+                    "context_summary": "Rapid change, intense therapy"
+                },
+                {
+                    "context_item": "Alternative Theme 3",
+                    "context_details": "Support",
+                    "context_summary": "Maintenance mode post-change"
+                },
+                {
+                    "context_item": "COGS per Performance Unit",
+                    "context_details": "$1000",
+                    "context_summary": "Est. direct therapy material costs"
+                },
+                {
+                    "context_item": "Leadership Overhead",
+                    "context_details": "10%",
+                    "context_summary": "Based on $5.4M annual revenue"
+                },
+                {
+                    "context_item": "Other Overhead",
+                    "context_details": "5%",
+                    "context_summary": "Est. for facilities, admin, IT"
+                },
+                {
+                    "context_item": "Total Operating Profit Margin",
+                    "context_details": "15%",
+                    "context_summary": "Sum of leadership and other"
+                }
+            ],
+            "columns": [
+                "Value Stream Activity",
+                "Value Stream Tag",
+                "Delivery Parameter",
+                "Cadence",
+                "Cycle",
+                "Hours/Unit",
+                "Benchmark Units",
+                "Benchmark KPIs",
+                "KPI Context",
+                "Value Tag",
+                "Skills Required",
+                "Functional Requirement",
+                "Job Type Tag",
+                "Hourly Rate",
+                "Revenue Multiplier",
+                "Critical Activity Tag",
+                "Activity Context"
+            ],
+            "master_data_table": [
+                {
+                    "value_stream_activity": "Number of initial consultations",
+                    "value_stream_tag": "Intake",
+                    "delivery_parameter": "Once",
+                    "cadence": 1,
+                    "cycle": 1,
+                    "hours_per_unit": 1,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "48 hour completion",
+                    "kpi_context": "Time from contact to consult",
+                    "value_tag": "Indirect",
+                    "skills_required": "Communication, organization",
+                    "functional_requirement": "Intake Coordinator",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 20,
+                    "revenue_multiplier": 2,
+                    "critical_activity_tag": "Yes",
+                    "activity_context": "Initial family meeting"
+                },
+                {
+                    "value_stream_activity": "Number of insurance verifications",
+                    "value_stream_tag": "Intake",
+                    "delivery_parameter": "Once",
+                    "cadence": 1,
+                    "cycle": 1,
+                    "hours_per_unit": 1,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "99% clean claims",
+                    "kpi_context": "Eligibility and benefits",
+                    "value_tag": "Indirect",
+                    "skills_required": "Attention to detail",
+                    "functional_requirement": "Insurance Verification",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 18,
+                    "revenue_multiplier": 2,
+                    "critical_activity_tag": "No",
+                    "activity_context": "Validating coverage"
+                },
+                {
+                    "value_stream_activity": "Number of initial assessments",
+                    "value_stream_tag": "Assess",
+                    "delivery_parameter": "Once",
+                    "cadence": 1,
+                    "cycle": 1,
+                    "hours_per_unit": 4,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "7 day completion",
+                    "kpi_context": "Time from intake to assess",
+                    "value_tag": "Direct",
+                    "skills_required": "Assessment, diagnosis",
+                    "functional_requirement": "BCBA",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 60,
+                    "revenue_multiplier": 3,
+                    "critical_activity_tag": "Yes",
+                    "activity_context": "Evaluation of needs"
+                },
+                {
+                    "value_stream_activity": "Number of initial treatment plans",
+                    "value_stream_tag": "Plan",
+                    "delivery_parameter": "Once",
+                    "cadence": 1,
+                    "cycle": 1,
+                    "hours_per_unit": 3,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "100% within 15 days",
+                    "kpi_context": "Time from assess to plan",
+                    "value_tag": "Direct",
+                    "skills_required": "ABA treatment planning",
+                    "functional_requirement": "BCBA",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 60,
+                    "revenue_multiplier": 3,
+                    "critical_activity_tag": "Yes",
+                    "activity_context": "Developing treatment goals"
+                },
+                {
+                    "value_stream_activity": "Number of daily therapy sessions",
+                    "value_stream_tag": "Treat",
+                    "delivery_parameter": "Daily (5 days/week)",
+                    "cadence": 260,
+                    "cycle": 780,
+                    "hours_per_unit": 2,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "300 learning opps/session",
+                    "kpi_context": "Discrete trial training sets",
+                    "value_tag": "Direct",
+                    "skills_required": "ABA delivery techniques",
+                    "functional_requirement": "RBT",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 20,
+                    "revenue_multiplier": 2.5,
+                    "critical_activity_tag": "Yes",
+                    "activity_context": "Discrete trial training"
+                },
+                {
+                    "value_stream_activity": "Number of daily session notes",
+                    "value_stream_tag": "Monitor",
+                    "delivery_parameter": "Daily (5 days/week)",
+                    "cadence": 260,
+                    "cycle": 780,
+                    "hours_per_unit": 0.25,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "Completed within 24 hours",
+                    "kpi_context": "Timely clinical documentation",
+                    "value_tag": "Indirect",
+                    "skills_required": "Clear behavioral reporting",
+                    "functional_requirement": "RBT",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 20,
+                    "revenue_multiplier": 2.5,
+                    "critical_activity_tag": "No",
+                    "activity_context": "Logging therapy sessions"
+                },
+                {
+                    "value_stream_activity": "Number of RBT supervision meetings",
+                    "value_stream_tag": "Monitor",
+                    "delivery_parameter": "Weekly",
+                    "cadence": 52,
+                    "cycle": 156,
+                    "hours_per_unit": 0.5,
+                    "benchmark_units": 3,
+                    "benchmark_kpis": "1:2 BCBA to RBT ratio",
+                    "kpi_context": "Close clinical oversight",
+                    "value_tag": "Direct",
+                    "skills_required": "Coaching, problem-solving",
+                    "functional_requirement": "BCBA",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 60,
+                    "revenue_multiplier": 3,
+                    "critical_activity_tag": "Yes",
+                    "activity_context": "Ensuring consistent quality"
+                },
+                {
+                    "value_stream_activity": "Number of caregiver update meetings",
+                    "value_stream_tag": "Monitor",
+                    "delivery_parameter": "Monthly",
+                    "cadence": 12,
+                    "cycle": 36,
+                    "hours_per_unit": 1,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "90% attendance rate",
+                    "kpi_context": "Engaging family in care",
+                    "value_tag": "Indirect",
+                    "skills_required": "Communication, empathy",
+                    "functional_requirement": "BCBA",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 60,
+                    "revenue_multiplier": 3,
+                    "critical_activity_tag": "No",
+                    "activity_context": "Progress reporting"
+                },
+                {
+                    "value_stream_activity": "Number of assessment reviews",
+                    "value_stream_tag": "Reassess",
+                    "delivery_parameter": "Quarterly",
+                    "cadence": 4,
+                    "cycle": 12,
+                    "hours_per_unit": 3,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "Measurable improvement",
+                    "kpi_context": "Evidence of plan efficacy",
+                    "value_tag": "Direct",
+                    "skills_required": "Assessment, analysis",
+                    "functional_requirement": "BCBA",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 60,
+                    "revenue_multiplier": 3,
+                    "critical_activity_tag": "Yes",
+                    "activity_context": "Evaluating progress"
+                },
+                {
+                    "value_stream_activity": "Number of treatment plan updates",
+                    "value_stream_tag": "Adjust",
+                    "delivery_parameter": "Quarterly",
+                    "cadence": 4,
+                    "cycle": 12,
+                    "hours_per_unit": 2,
+                    "benchmark_units": 1,
+                    "benchmark_kpis": "100% completion rate",
+                    "kpi_context": "Adjusting to child's needs",
+                    "value_tag": "Direct",
+                    "skills_required": "ABA treatment planning",
+                    "functional_requirement": "BCBA",
+                    "job_type_tag": "Full Time Employee",
+                    "hourly_rate": 60,
+                    "revenue_multiplier": 3,
+                    "critical_activity_tag": "No",
+                    "activity_context": "Modifying treatment goals"
+                }
+            ]
+        }
+    }
+]
