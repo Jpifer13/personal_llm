@@ -6,7 +6,7 @@ from typing import Optional
 
 from fastapi import APIRouter, File, UploadFile, WebSocket, WebSocketDisconnect, Request
 
-from src.services.fine_tune import fine_tune
+from src.services.fine_tune import fine_tune, fine_tune_pdf
 
 router = APIRouter()
 logger = getLogger()
@@ -47,7 +47,7 @@ async def upload_file(file: UploadFile = File(...), dataset_name: Optional[str] 
     with open(pdf_file_path, "wb") as f:
         f.write(await file.read())
 
-    await fine_tune(pdf_file_path)
+    await fine_tune_pdf(pdf_file_path)
 
     return {"message": f"PDF uploaded successfully: {filename}"}
 

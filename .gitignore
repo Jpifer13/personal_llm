@@ -158,3 +158,4 @@ docs/
 results/*
 datasets/*
 fine_tuned_models/*
+pdfs/*
