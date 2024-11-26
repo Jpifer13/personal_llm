@@ -1,6 +1,4 @@
-Sure, here is the updated README for setting up and running the application locally with Python 3.12 and Poetry as the package manager:
-
-```markdown
+ 
 # Text Generation with GPT-2
 
 This project is a web application that uses FastAPI and React to generate text using GPT-2.
@@ -77,9 +75,3 @@ This project is a web application that uses FastAPI and React to generate text u
 
 - The React app will be served from the FastAPI backend.
 - Enter a prompt and see each new generated text response appear in a new text box under the previous responses, with the results container automatically scrolling to the latest response as it is being typed.
-
-```
-
-Replace `<repository-url>` and `<repository-directory>` with the actual repository URL and directory name.
-
-This README provides instructions on how to set up the application locally after cloning the repository, using Python 3.12^ and Poetry for package management.
